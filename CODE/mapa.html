@@ -1,0 +1,182 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+        
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7e09de88e4534d80ae54cddf6b1bd2ca {
+                    position: relative;
+                    width: 380.0px;
+                    height: 700.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7e09de88e4534d80ae54cddf6b1bd2ca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7e09de88e4534d80ae54cddf6b1bd2ca = L.map(
+                "map_7e09de88e4534d80ae54cddf6b1bd2ca",
+                {
+                    center: [-17.7833, -63.1821],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3762e7d165cf0e2f68c3b80a18b747d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3762e7d165cf0e2f68c3b80a18b747d4.addTo(map_7e09de88e4534d80ae54cddf6b1bd2ca);
+        
+    
+            var marker_27d1a7f96c43bd7434e15b97e103437d = L.marker(
+                [-17.7833, -63.1821],
+                {
+}
+            ).addTo(map_7e09de88e4534d80ae54cddf6b1bd2ca);
+        
+    
+            var icon_545e0b5f145488e8294a90631ac6144a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_27d1a7f96c43bd7434e15b97e103437d.setIcon(icon_545e0b5f145488e8294a90631ac6144a);
+        
+    
+        var popup_656321d860ff010722fb0389af1f2c9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49732d4cf08b843654df1d82bdce0ce9 = $(`<div id="html_49732d4cf08b843654df1d82bdce0ce9" style="width: 100.0%; height: 100.0%;">Cristo Redentor - Santa Cruz</div>`)[0];
+                popup_656321d860ff010722fb0389af1f2c9c.setContent(html_49732d4cf08b843654df1d82bdce0ce9);
+            
+        
+
+        marker_27d1a7f96c43bd7434e15b97e103437d.bindPopup(popup_656321d860ff010722fb0389af1f2c9c)
+        ;
+
+        
+    
+    
+            marker_27d1a7f96c43bd7434e15b97e103437d.bindTooltip(
+                `<div>
+                     Haz clic para más info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
+        <script>
+            var map = L.map(
+                'map',
+                {
+                    center: [-17.7833, -63.1821],
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            
+            var marker = L.marker([-17.7833, -63.1821])
+                .addTo(map)
+                .bindPopup("Cristo Redentor - Santa Cruz")
+                .bindTooltip("Haz clic para más info");
+        </script>
+    </body>
+    </html>
+    
